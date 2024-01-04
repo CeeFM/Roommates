@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Roommates")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce26e8bbf18aefc0e6af52fef3ffef3a50939f50")]
 [assembly: System.Reflection.AssemblyProductAttribute("Roommates")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Roommates")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

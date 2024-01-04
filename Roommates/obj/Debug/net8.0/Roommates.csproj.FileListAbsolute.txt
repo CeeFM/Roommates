@@ -48,3 +48,4 @@ C:\Users\cfree\workspace\Roommates\Roommates\obj\Debug\net8.0\refint\Roommates.d
 C:\Users\cfree\workspace\Roommates\Roommates\obj\Debug\net8.0\Roommates.pdb
 C:\Users\cfree\workspace\Roommates\Roommates\obj\Debug\net8.0\Roommates.genruntimeconfig.cache
 C:\Users\cfree\workspace\Roommates\Roommates\obj\Debug\net8.0\ref\Roommates.dll
+C:\Users\cfree\workspace\Roommates\Roommates\obj\Debug\net8.0\Roommates.sourcelink.json

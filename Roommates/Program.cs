@@ -16,6 +16,19 @@ namespace Roommates
             RoomRepository roomRepo = new RoomRepository(CONNECTION_STRING);
             ChoreRepository choreRepo = new ChoreRepository(CONNECTION_STRING);
             RoommateRepository roommateRepo = new RoommateRepository(CONNECTION_STRING);
+            Console.WriteLine("WELCOME TO THE ROOMMATE TRACKER, NOT CREEPY AT ALL!!!");
+            Console.WriteLine();
+            Console.WriteLine("Here's a list of your current roommates, and their respective rooms");
+            List<Roommate> roommateList = roommateRepo.GetAll();
+
+            foreach (Roommate singleRoommate in roommateList)
+            {
+                Roommate roommateRoom = roommateRepo.GetById(singleRoommate.Id);
+                Console.WriteLine($"Roommate #{singleRoommate.Id} -- {singleRoommate.FirstName} {singleRoommate.LastName}, lives in the {roommateRoom.Room.Name}");
+            }
+            Console.Write("Press any key to continue");
+            Console.ReadKey();
+
             bool runProgram = true;
             while (runProgram)
             {
@@ -54,7 +67,7 @@ namespace Roommates
                         List<Roommate> roommates = roommateRepo.GetAll();
                         foreach (Roommate r in roommates)
                         {
-                            Console.WriteLine($"Roommate #{r.Id}: {r.FirstName} {r.LastName} - they pay {r.RentPortion}% of the total rent.");
+                            Console.WriteLine($"Roommate #{r.Id}: {r.FirstName} {r.LastName} - they pay {r.RentPortion}% of the total rent");
                         }
                         Console.Write("Press any key to continue");
                         Console.ReadKey();

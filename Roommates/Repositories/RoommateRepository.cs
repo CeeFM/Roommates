@@ -143,9 +143,9 @@ namespace Roommates.Repositories
                 conn.Open();
                 using (SqlCommand cmd = conn.CreateCommand())
                 { 
-                    cmd.CommandText = $"DELETE FROM Roommate WHERE Id = @id";
+                    cmd.CommandText = @"DELETE FROM Roommate WHERE Id = @id";
                     cmd.Parameters.AddWithValue("@id", id);
-                    SqlDataReader reader = cmd.ExecuteReader();
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
@@ -192,7 +192,7 @@ namespace Roommates.Repositories
                     cmd.Parameters.AddWithValue("@MoveInDate", roommate.MoveInDate);
                     cmd.Parameters.AddWithValue("@RoomId", roommate.Room.Id);
                     cmd.Parameters.AddWithValue("@Id", roommate.Id);
-                    SqlDataReader reader = cmd.ExecuteReader();
+                    cmd.ExecuteNonQuery();
 
                 }
             }
